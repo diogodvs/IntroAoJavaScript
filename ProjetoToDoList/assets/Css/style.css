@@ -1,0 +1,65 @@
+/* Geral */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, darkgrey, rgb(153, 231, 153));
+}
+
+/* corpo */
+
+.entrada {
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.entrada h1 {
+    margin-bottom: 15px;
+}
+
+.entrada button {
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+.entrada input {
+    height: 21px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+#tasks {
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+:checked+label {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.task-item input{
+    margin-right: 10px;
+    font-size: 25px;
+}
